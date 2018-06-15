@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{147E4293-9CBA-41F4-98EB-C5BF79B0AE52}</ProjectGuid>
-    <RootNamespace>core</RootNamespace>
+    <ProjectGuid>{A438DEF4-2A65-4CF8-9A7D-D120AC62D155}</ProjectGuid>
+    <RootNamespace>bzg</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,12 +115,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="String.cpp" />
+    <ClInclude Include="core\String.h" />
+    <ClInclude Include="sharedlibrary\ClassLoader.h" />
+    <ClInclude Include="sharedlibrary\Manifest.h" />
+    <ClInclude Include="sharedlibrary\MetaObject.h" />
+    <ClInclude Include="sharedlibrary\SharedLibrary.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="lock.hpp" />
-    <ClInclude Include="String.h" />
+    <ClCompile Include="core\String.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="sharedlibrary\SharedLibrary.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

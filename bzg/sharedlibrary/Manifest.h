@@ -148,6 +148,4 @@ namespace bzg
 			MetaMap _metaMap;
 		};
 
-
-
 }
